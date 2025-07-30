@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: DefaultTabController(
-        length: 6,
+        length: 5,
         child: Scaffold(
           appBar: AppBar(
             backgroundColor: Colors.deepPurpleAccent,
@@ -30,8 +30,7 @@ class MyApp extends StatelessWidget {
                 Tab(icon: Icon(Icons.directions_transit), text: "Train"),
                 Tab(icon: Icon(Icons.directions_bike), text: "bike"),
                 Tab(icon: Icon(Icons.directions_car)),
-                Tab(icon: Icon(Icons.directions_transit)),
-                Tab(icon: Icon(Icons.directions_bike)),
+                Tab(icon: Icon(Icons.directions_transit))
               ],
             ),
             title: const Text('My Resume'),
@@ -50,7 +49,7 @@ class MyApp extends StatelessWidget {
               ),
             ),
             child: TabBarView(
-              children: [tab1(), tab2(), tab3(), tab4(), tab5(), tab6()],
+              children: [tab1(), tab2(), tab3(), tab4(), tab5()],
             ),
           ),
         ),
@@ -257,21 +256,6 @@ class MyApp extends StatelessWidget {
   }
 
   Widget tab5() {
-    return Center(
-      child: Container(
-        // กรอบทั้งหมด
-        margin: EdgeInsets.all(40),
-        padding: EdgeInsets.all(20),
-        decoration: BoxDecoration(
-          border: Border.all(color: Colors.brown, width: 2),
-          borderRadius: BorderRadius.circular(15),
-          color: Colors.white,
-        ),
-      ),
-    );
-  }
-
-  Widget tab6() {
     return Center(
       child: Container(
         // กรอบทั้งหมด
